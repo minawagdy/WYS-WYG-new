@@ -833,7 +833,42 @@
         </div>
       </div>
     </div>
+    
     <style>
+      @media (max-width: 767px) {
+  .sticky-bar .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Move the burger menu to the top */
+  .burger-menu {
+    order: -1; /* This makes sure the mobile menu appears first */
+  }
+
+  /* Style the mobile menu when active */
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header-nav {
+    display: none; /* Hide the main menu on mobile */
+  }
+  
+  .header-bottom {
+    display: none; /* Hide the bottom menu on mobile */
+  }
+
+  /* For mobile navigation dropdown */
+  .header-nav-mobile {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+}
+
       /* Add styles for consistent width and height */
 .list-9-col {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust number of items per row */
