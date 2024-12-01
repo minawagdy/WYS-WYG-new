@@ -833,6 +833,61 @@
         </div>
       </div>
     </div>
+    <style>
+      /* Add styles for consistent width and height */
+.list-9-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust number of items per row */
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box-category {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.box-category .image {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-category img {
+  width: 100px; /* Set consistent image size */
+  height: 100px; /* Set consistent image size */
+  object-fit: cover;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-info a {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-info p {
+  font-size: 14px;
+  color: #777;
+}
+
+    </style>
     <section class="section-box mt-30">
       <div class="container">
         <div class="border-bottom pb-25 head-main">
