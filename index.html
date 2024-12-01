@@ -835,78 +835,7 @@
     </div>
     
     <style>
-      /* Ensure the main header does not interfere with mobile menu */
-.header {
-  position: relative;
-}
-
-/* For mobile view, adjust the position of the dropdown menu */
-@media (max-width: 991px) {
-  .sticky-bar {
-    position: relative;
-  }
-
-  /* Move mobile menu (burger icon) and related items to the top */
-  .header-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999; /* Make sure it's on top */
-  }
-
-  .burger-icon {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    z-index: 10000;
-  }
-
-  /* Ensure the dropdown (language, address, etc.) menus are aligned at the top */
-  .dropdown-menu-address,
-  .dropdown-menu-light {
-    position: absolute;
-    top: 50px; /* Adjust this value to place the menu below the header */
-    left: 0;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-  }
-
-  /* Adjust padding and other properties for better mobile layout */
-  .dropdown-menu-light {
-    padding: 15px;
-  }
-  
-  .dropdown-menu-address {
-    padding: 20px;
-  }
-
-  /* Adjust mobile menu items layout */
-  .header-left, .header-shop {
-    display: block;
-    width: 100%;
-  }
-
-  .main-header {
-    padding-top: 10px;
-  }
-
-  /* Modify the cart and account icons if needed for mobile */
-  .box-dropdown-cart,
-  .dropdown-account {
-    display: none; /* Hide dropdown items on mobile for simplicity */
-  }
-
-  /* Adjust the position of the search bar */
-  .header-search {
-    margin-top: 10px;
-    width: 100%;
-  }
-}
-
+      
       /* Add styles for consistent width and height */
 .list-9-col {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust number of items per row */
